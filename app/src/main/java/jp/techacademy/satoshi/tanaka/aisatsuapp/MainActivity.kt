@@ -1,10 +1,9 @@
 package jp.techacademy.satoshi.tanaka.aisatsuapp
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.app.TimePickerDialog
+import android.os.Bundle
 import android.view.View
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 TimePickerDialog.OnTimeSetListener { View, hour, minute ->
                     if (hour>1&&hour<10) {
                         textView.text=num1
-                    } else if (hour>10&&hour<18){
+                    } else if (hour>9&&hour<18){
                             textView.text=num2
                         }else {
                         textView.text = num3
